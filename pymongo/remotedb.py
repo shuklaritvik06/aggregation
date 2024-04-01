@@ -16,18 +16,9 @@ datas = [
     {"name": "MECH", "address": "Third Floor", "teachers": ["Shahu", "Rajut"]},
 ]
 result = collection.insert_many(datas)
-
-# READ
-
 for x in collection.find():
     print(x)
 result = collection.find_one({"name": "ECE"})
 print(result)
-
-# UPDATE
-
 collection.update_one({"name": "ECE"}, {"$set": {"address": "Ground Floor"}})
-
-# DELETE
-
 collection.delete_one({"name": "CSE"})
