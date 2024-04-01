@@ -1,2 +1,5 @@
-# LearnPyMongo
-This is a repo to record my learnings of PyMongo and working with it.
+# MongoDB
+
+- [x] Aggregation
+- [x] Operators
+- [x] Pymongo
